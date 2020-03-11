@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>jb</title>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+
+$(document).ready(function(){
+  $("button").click(function(){
+    var para=$('h1').text('hello');
+    var element=document.createElement('p');
+    element.innerHTML='Chitkara';
+    var img=('<img width="100px" height="100px" src="http://cdn.ndtv.com/tech/images/google_logo_redesign_2015_newest1.jpg">');
+    $('body').append(para,element,img);
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Click</button>
+
+</body>
+</html>

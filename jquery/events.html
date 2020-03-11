@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").css("background-color", "yellow");
+    $("p").text("yellow");
+    $("p").toggle(function(){
+        $("p").css("background-color", "grey");
+        $("p").text("grey");;
+        $("h1").toggle();
+    });
+    $("#one").slideToggle();
+  });
+//   $("button").click(function(){
+//     $("p").css("background-color", "yellow");
+//     $("p").text("yellow");
+//     $("p").show(function(){
+//         // alert("boy");
+//     });
+//     // alert("boy");
+//   });
+$("#two:first").click(function (){
+    $(this).fadeOut("fast");
+})
+ });
+</script>
+</head>
+<body>
+    <div style="width: 1000px; height: 100px; border: 2px solid black;">
+<button>toggle</button>
+
+<p>grey</p>
+</div>
+<br>
+<div style="width: 1000px; height: 100px; border: 2px solid black;">
+
+<h1 style="display: none;"> P tag is hidden</h1>
+</div>
+</div>
+<br>
+<div id="one" style=" background-color: green ; width: 1000px; height: 100px; border: 2px solid black;">
+
+</div><br>
+<div id="two" style=" background-color: blue ; width: 1000px; height: 100px; border: 2px solid black;">
+
+</div><br><div id="two" style=" background-color:blue ; width: 1000px; height: 100px; border: 2px solid black;">
+
+</div><br><div id="two" style=" background-color:blue ; width: 1000px; height: 100px; border: 2px solid black;">
+
+</div>
+
+    
+
+</body>
+
+</html>
